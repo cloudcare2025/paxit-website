@@ -74,17 +74,19 @@ export default function Navbar() {
 
                 {/* Dropdown */}
                 {item.children && openDropdown === item.label && (
-                  <div className="absolute top-full left-0 mt-2 w-60 overflow-hidden rounded-xl border border-slate-200/80 bg-white p-1.5 shadow-xl shadow-slate-200/40">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className="flex items-center gap-3 rounded-lg px-4 py-3 text-[13px] font-medium text-slate-600 transition-all hover:bg-slate-50 hover:text-paxit-blue"
-                      >
-                        <div className="h-1.5 w-1.5 rounded-full bg-paxit-blue/40" />
-                        {child.label}
-                      </Link>
-                    ))}
+                  <div className="absolute top-full left-0 w-60 pt-2">
+                    <div className="overflow-hidden rounded-xl border border-slate-200/80 bg-white p-1.5 shadow-xl shadow-slate-200/40">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="flex items-center gap-3 rounded-lg px-4 py-3 text-[13px] font-medium text-slate-600 transition-all hover:bg-slate-50 hover:text-paxit-blue"
+                        >
+                          <div className="h-1.5 w-1.5 rounded-full bg-paxit-blue/40" />
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
