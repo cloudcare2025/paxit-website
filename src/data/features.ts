@@ -2,7 +2,6 @@ export interface Feature {
   title: string;
   description: string;
   icon: string;
-  span?: "col" | "row" | "both";
 }
 
 export const features: Feature[] = [
@@ -10,7 +9,6 @@ export const features: Feature[] = [
     title: "Manage & Organize Images",
     description: "Store images in organized folders with a nested treeview or intuitive cabinet/folder interface. Auto-sort images as they come in.",
     icon: "folders",
-    span: "col",
   },
   {
     title: "Archive & Database",
@@ -31,7 +29,6 @@ export const features: Feature[] = [
     title: "Measurements",
     description: "Calibrated linear, area, and angular measurements with automatic scale bar detection and reporting.",
     icon: "ruler",
-    span: "col",
   },
   {
     title: "Analyze Images",
@@ -52,7 +49,6 @@ export const features: Feature[] = [
     title: "Secure Your Assets",
     description: "Role-based access control, audit trails, and 21 CFR Part 11 compliance for regulated environments.",
     icon: "shield",
-    span: "col",
   },
   {
     title: "Workflow Automation",
